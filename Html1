@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Maioridade</title>
+</head>
+<body>
+    <h1>Verifique sua Maioridade</h1>
+    <form action="verificacao.php" method="POST">
+        <label for="idade">Informe sua idade:</label>
+        <input type="number" name="idade" id="idade" required>
+        <input type="submit" value="Verificar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $numero = $_POST['numero'];
+
+    if ($numero > 0) {
+        $soma = 0;
+           
+        for ($i = 1; $i <= $numero; $i++) {
+            $soma += $i; 
+        }             
+        echo "<h2>a soma dos números de 1 até $numero é: $soma</h2>";
+    } else {
+        echo "<h2>por favor, informe um número inteiro positivo.</h2>";
+    }
+}
+?>

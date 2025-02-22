@@ -1,0 +1,10 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $tamanho = (int)$_POST['tamanho'];
+    if ($tamanho >= 6 && $tamanho <= 12) {
+        $senha = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"), 0, $tamanho);
+        echo "Senha gerada: " . $senha;
+    } else {
+        echo "Número fora do intervalo.";
+    }
+}

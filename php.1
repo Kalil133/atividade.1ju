@@ -1,0 +1,12 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
+    $idade = $_POST['idade'];  
+    
+    if ($idade >= 18) {
+        echo "<h2>Você é maior de 18 anos. Pode prosseguir!</h2>";
+    } else {
+        echo "<h2>Você é menor de 18 anos. Acesso restrito!</h2>";
+    }
+}
+?>

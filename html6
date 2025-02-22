@@ -1,0 +1,5 @@
+<form method="post">
+    <label>Digite uma palavra:</label>
+    <input type="text" name="palavra">
+    <button type="submit">Contar Vogais</button>
+</form>

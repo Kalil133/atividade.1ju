@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+</head>
+<body>
+    <h1>Calcule a Soma de Números de 1 até o Número Informado</h1>
+    <form action="soma.php" method="POST">
+        <label for="numero">Digite um número inteiro positivo:</label>
+        <input type="number" name="numero" id="numero" min="1" required>
+        <input type="submit" value="Calcular Soma">
+    </form>
+</body>
+</html>

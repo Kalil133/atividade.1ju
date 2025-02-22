@@ -1,0 +1,5 @@
+<form method="post">
+    <label>Digite um número:</label>
+    <input type="number" name="numero">
+    <button type="submit">Gerar Fibonacci</button>
+</form>

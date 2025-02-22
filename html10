@@ -1,0 +1,5 @@
+<form method="post">
+    <label>Digite seu CPF:</label>
+    <input type="text" name="cpf">
+    <button type="submit">Validar</button>
+</form>

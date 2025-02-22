@@ -1,0 +1,9 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cpf = trim($_POST['cpf']);
+    if (strlen($cpf) == 11 && ctype_digit($cpf)) {
+        echo "CPF válido!";
+    } else {
+        echo "CPF inválido!";
+    }
+}

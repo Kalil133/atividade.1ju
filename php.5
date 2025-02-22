@@ -1,0 +1,10 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nomes = trim($_POST['nomes']);
+    $nomesArray = explode(',', $nomes);
+    echo "<ol>";
+    foreach ($nomesArray as $nome) {
+        echo "<li>" . trim($nome) . "</li>";
+    }
+    echo "</ol>";
+}
